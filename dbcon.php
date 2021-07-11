@@ -1,0 +1,30 @@
+<?php
+
+$server="localhost";
+$user="root";
+$password="";
+$db="signup";
+
+
+$con= mysqli_connect($server,$user,$password,$db);
+
+if($con){
+    ?>
+    <script>
+        //alert("conncetion sucessful")
+    </script>
+
+
+    <?php
+}
+else{
+    ?>
+    <script>
+        alert(" no conncetion")
+    </script>
+
+
+    <?php
+
+}
+?>
