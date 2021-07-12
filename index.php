@@ -6,6 +6,7 @@ session_start();
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -22,6 +23,8 @@ if(isset($_POST["submit"])){
     $mobile=mysqli_real_escape_string($con, $_POST['mobile']);
     $password=mysqli_real_escape_string($con,$_POST['password']);
     $cpassword=mysqli_real_escape_string($con,$_POST['cpassword']);
+
+    //password decription
 
     $pass=password_hash($password, PASSWORD_BCRYPT);
     $cpass=password_hash($cpassword,PASSWORD_BCRYPT);
@@ -40,7 +43,7 @@ if(isset($_POST["submit"])){
     }else{
         if($password===$cpassword){
 
-            $insertquery ="insert into registration (username, email, mobile, password, cpassword) values ('$username','$email','$mobile','$password','$cpassword' )";
+            $insertquery ="insert into registration (username, email, mobile, password, cpassword) values ('$username','$email','$mobile','$pass','$cpass' )";
 
             $iquery = mysqli_query($con,$insertquery);
             if($iquery) {
@@ -82,15 +85,14 @@ if(isset($_POST["submit"])){
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
         <input name="username" class="form-control" placeholder="Full name" type="text" required >
-    </div> <!-- form-group// -->
-
+    </div> 
 
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
 		 </div>
         <input class="form-control" placeholder="Email address" type="email" name="email" required >
-    </div> <!-- form-group// -->
+    </div> 
 
     <div class="form-group input-group">
     	<div class="input-group-prepend">
@@ -102,22 +104,23 @@ if(isset($_POST["submit"])){
 		</select>
     	<input name="mobile" class="form-control" placeholder="Phone number" type="number" required >
     </div> 
+
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
         <input class="form-control" placeholder="Create password" type="password" name="password" required >
-    </div> <!-- form-group// -->
+    </div> 
 
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
         <input class="form-control" placeholder="Repeat password" type="password" name="cpassword" required >
-    </div> <!-- form-group// -->                                      
+    </div>                                    
     <div class="form-group">
         <button type="submit" name="submit" class="btn btn-primary btn-block" required > Create Account  </button>
-    </div> <!-- form-group// -->      
+    </div>     
     <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
 </form>
 </article>
