@@ -1,9 +1,15 @@
+# Registration_PHP_SQL
+
+
 <h1>Registration Form </h1>
-![Screenshot (32)](https://user-images.githubusercontent.com/74768938/125233660-ad2d5f80-e2fc-11eb-8990-0fbbc585ce04.png)
+
+![login](https://user-images.githubusercontent.com/74768938/125234420-532d9980-e2fe-11eb-813e-2334f7dfee14.png)
+
 
 <h1>Stored Data In DB </h1>
-![Screenshot (45)](https://user-images.githubusercontent.com/74768938/125233684-b61e3100-e2fc-11eb-9312-e9eff1fccf86.png)
-# Registration_PHP_SQL
+![db](https://user-images.githubusercontent.com/74768938/125234469-722c2b80-e2fe-11eb-9266-43d9876703d4.png)
+
+
 
 
 
