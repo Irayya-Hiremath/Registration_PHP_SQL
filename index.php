@@ -121,7 +121,7 @@ if(isset($_POST["submit"])){
     <div class="form-group">
         <button type="submit" name="submit" class="btn btn-primary btn-block" required > Create Account  </button>
     </div>     
-    <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
+    <p class="text-center">Have an account? <a href="logins.php">Log In</a> </p>                                                                 
 </form>
 </article>
 </div> <!-- card.// -->
