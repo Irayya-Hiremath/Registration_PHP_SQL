@@ -25,7 +25,14 @@ if(isset($_POST['submitForm'])){
 
     // 2nd method
     if($cons->query($sql)===TRUE){
-        echo"added to data base";
+        ?>
+        <script> 
+
+        alert("added to data base");
+        location.replace("index2.php");
+        </script>;
+        <?php
+        // echo"added to data base";
     }else{
         echo"something wrong";
     }

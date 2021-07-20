@@ -12,7 +12,7 @@ $cons= mysqli_connect($server,$user,$pass,$db);
 if($cons){
     ?>
     <script>
-        alert("conncetion sucessful")
+        // alert("conncetion sucessful")
     </script>
 
 

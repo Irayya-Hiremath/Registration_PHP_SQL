@@ -13,6 +13,7 @@ if (!isset( $_SESSION['email'])){
 // }
 // include "upload.php";
 
+
 ?>
 
 
@@ -49,39 +50,16 @@ if (!isset( $_SESSION['email'])){
                     <td><h3> <?php echo $_SESSION['email']; ?> </h3></td>
                     </tr>
                     <tr>
-                    <!-- <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    </tr> -->
                 </tbody>
                 </table>
         </form>
 
-        <br>
-                    <!-- for file uploads -->
-
-        <form action="upload.php" method="post" enctype="multipart/form-data">Select image to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload Image" name="submit">
-        </form>
-
-    
-        <br>
-
-
-        <!-- <h1>
-        <?php
+       
+        <!-- <?php
         echo $_SESSION['username'];
         echo $_SESSION['email'];
-
-
-        ?>
-        </h1> -->
-
+        ?> -->
+        
         <button type="submit" name="submit" class="btn btn-primary w-8 " required ><a href="logout.php" class="text-white">Log out </a> </button>
 </div>
 </body>
