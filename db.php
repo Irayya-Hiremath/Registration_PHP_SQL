@@ -2,13 +2,12 @@
 
 $server="localhost";
 $user="root";
-$password="";
-$db="signup";
+$pass="";
+$db="crud";
 
+$cons= mysqli_connect($server,$user,$pass,$db);
 
-$con= mysqli_connect($server,$user,$password,$db);
-
-if($con){
+if($cons){
     ?>
     <script>
         alert("conncetion sucessful")
@@ -20,11 +19,16 @@ if($con){
 else{
     ?>
     <script>
-        alert(" no conncetion")
+        alert(" no conncetion") 
     </script>
 
 
     <?php
 
 }
+
+
+
+
+
 ?>

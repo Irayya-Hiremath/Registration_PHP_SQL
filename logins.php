@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 
 <?php
    
@@ -18,21 +22,51 @@
 
             $email_pass=mysqli_fetch_assoc($query);
 
+            // below traila
+            $emid_pass=mysqli_fetch_assoc($query);
+
+            //  trailas`
+
+
+            $_SESSION['email']  = $email_pass['email'];
+            
+
+
+            // nottt
+            
             $db_pass=$email_pass['password'];
+        
+            $_SESSION['username']  = $email_pass['username'];
+
+            
+
+            // $_SESSION['email']=$email['email'];
+
 
             $pass_decode=password_verify($password, $db_pass);
 
 
             if($pass_decode){
-                echo"login successful";
+                ?>
+                <script> 
+
+                alert("login successful");
+                location.replace("home.php");
+
+                </script>;
+                <?php
 
             }else{
-                echo"password incorect";
+                ?>
+                <script> alert("password incorrect")</script>;
+                <?php
             }
 
         }
         else{
-            echo"invalid email";
+            ?>
+                <script> alert("invalid email")</script>;
+          <?php
         }
 
     }
