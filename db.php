@@ -5,6 +5,8 @@ $user="root";
 $pass="";
 $db="crud";
 
+
+
 $cons= mysqli_connect($server,$user,$pass,$db);
 
 if($cons){
