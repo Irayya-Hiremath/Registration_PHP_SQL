@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,7 +34,7 @@
   </nav>
 
       <div class="container">
-          <form class="form" action="./submit.php" method="POST">
+          <form class="form" action="./submit.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <!-- <label for="exampleFormControlInput1" class="form-label">product</label> -->
                     <br>
@@ -43,11 +46,21 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">description</label>
-                    <textarea class="form-control" name="pdescription"  id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea type="input" class="form-control" name="pdescription"  id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <div class="mb-3">
+
+                </div>
+        
                 <br><br>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">image</label>
+                    <input type="file" name="images" id="fileToUpload">
+                    <!-- <input type="submit" value="Upload Image" name="submit"> -->
+                </div>
                 <button type="submit" value="submit" name="submitForm" class="btn btn-primary btn-block" required > Submit </button>
-         </form>   
+         </form>  
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

@@ -57,8 +57,13 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">description</label>
-                    <textarea class="form-control" name="pdescription"  id="exampleFormControlTextarea1" rows="3" value=<?= $data['description']?>></textarea>
+                    <input class="form-control h-4 " name="pdescription"  id="exampleFormControlTextarea1" rows="3" value=<?= $data['description']?>></input>
                 </div>
+                <!-- <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">image</label>
+                    <input type="file" name="images" id="fileToUpload" value=<?= $data['image']?> >
+                    <input type="submit" value="Upload Image" name="submit">
+                </div> -->
                 <br><br>
                 <input type="submit" value="submit" name="editForm" class="btn btn-primary btn-block" required ></input>
          </form>   

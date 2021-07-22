@@ -7,11 +7,17 @@ if (isset($_GET['id'])&& isset($_POST['editForm'])){
                 $name=$_POST['pname'];
                 $price=$_POST['pprice'];
                 $description=$_POST['pdescription'];
+// image
+
+                // $imagee=$_POST['images'];
+// image
+
                 // echo"from edit page";
             $sql="UPDATE `product` SET 
             `name`=' $name',
             `price`='$price',
             `description`='$description' 
+            -- `image`='$imagee'
             WHERE id=$id";
 
             if($cons->query($sql)===TRUE){

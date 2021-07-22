@@ -50,6 +50,9 @@ $result=$cons->query($sql);
                    <th>Name</th>
                    <th>Price</th>
                    <th>Description</th>
+                   <th>Image</th>
+
+                   
               </tr>
 
          <?php
@@ -60,6 +63,8 @@ $result=$cons->query($sql);
                             echo "<td>" .$row['name']."</td>";
                             echo "<td>" .$row['price']."</td>";
                             echo "<td>" .$row['description']."</td>";
+                            echo "<td>" .$row['image']."</td>";
+
                             echo "<td>";
 
                             echo "<div class='btn-group'>";

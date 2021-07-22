@@ -12,7 +12,7 @@ $cons= mysqli_connect($server,$user,$pass,$db);
 if($cons){
     ?>
     <script>
-        // alert("conncetion sucessful")
+        // alert(" data base conncetion sucessful")
     </script>
 
 
@@ -21,7 +21,7 @@ if($cons){
 else{
     ?>
     <script>
-        alert(" no conncetion") 
+        alert("data base no conncetion") 
     </script>
 
 
